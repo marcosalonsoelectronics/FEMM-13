@@ -1,0 +1,69 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[Frequency]   =  0
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  0.10000000000000001
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Copper foil example"
+[PointProps]   = 0
+[BdryProps]   = 0
+[BlockProps]  = 1
+  <BeginBlock>
+    <BlockName> = "Copper"
+    <ox> = 58000000
+    <oy> = 58000000
+    <ex> = 1
+    <ey> = 1
+    <ltx> = 0
+    <lty> = 0
+  <EndBlock>
+[ConductorProps]  = 2
+  <BeginConductor>
+    <ConductorName> = "0V"
+    <vcr> = 0
+    <vci> = 0
+    <qcr> = 0
+    <qci> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "10mV"
+    <vcr> = 0.01
+    <vci> = 0
+    <qcr> = 0
+    <qci> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 12
+0	0	0	0	0
+0	100	0	0	0
+10	0	0	0	0
+10	100	0	0	0
+0	40	0	0	0
+10	40	0	0	0
+0	60	0	0	0
+10	60	0	0	0
+4	40	0	0	0
+6	40	0	0	0
+4	60	0	0	0
+6	60	0	0	0
+[NumSegments] = 12
+2	0	-1	0	0	0	1
+4	0	-1	0	0	0	0
+4	8	-1	0	0	0	0
+8	10	-1	0	0	0	0
+10	6	-1	0	0	0	0
+6	1	-1	0	0	0	0
+3	1	-1	0	0	0	2
+3	7	-1	0	0	0	0
+7	11	-1	0	0	0	0
+11	9	-1	0	0	0	0
+9	5	-1	0	0	0	0
+5	2	-1	0	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 1
+4.9000000000000004	18.199999999999999	1	-1	0	0
